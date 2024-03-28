@@ -63,9 +63,14 @@ body{
     justify-content: center;
     background: none;
     border: none;
-    color: #fff;
+    color: #1F6655;
+    cursor: pointer;
 }
-
+.message-box{
+    max-height: calc(100vh  - 6rem);
+    overflow: auto;
+    padding-bottom: 10px;
+}
 @media (max-width: 900px){
     .messagebar .bar-wrapper{
         width: 100%;
@@ -73,5 +78,10 @@ body{
     }
     .messagebar{
         height: auto;
+        height: 3rem;
+    }
+    .message-box{
+        max-height: calc(100vh - 3rem);
+        overflow: auto;
     }
 }
