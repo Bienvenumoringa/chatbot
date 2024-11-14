@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="img/icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="img/icons/font/bootstrap-icons.min.css">
+    <title>Chat chat bot</title>
+</head>
+<body>
+     {{{body}}}
+</body>    
+    <script src="controls/chat-bot.js"></script>
+    <script src="./ClientsModule/axios/dist/axios.min.js"></script>
+    <script>
+        {{!-- Menu  --}}
+        const SeeMenu =document.getElementById('SeeMenu')
+        const Menu = document.getElementById('Menu')
+        SeeMenu.addEventListener('click',()=>{
+            Menu.style.display=='flex'?
+            Menu.style.display='none':
+            Menu.style.display='flex'
+        })
+    </script>
+</html>

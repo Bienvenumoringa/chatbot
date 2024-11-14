@@ -1,0 +1,81 @@
+
+    <div class="chatbox-wrapper">
+       <div class="message-box">
+        {{!-- Menu barre --}}
+            <div class="d-flex menu"
+            style=" justify-content: space-between;"
+            >
+            <div></div>
+            <div id="SeeMenu" style="color: #ccc;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                </div>
+            </div>
+        {{!-- Menu content barre --}}
+         <div id="Menu" class="menuContent flex-wrap menu"
+            style=" display:none ;justify-content: center;"
+            >
+            <div></div>
+            <div id="history" class="rounded menuIcon"
+            style="cursor: pointer;"
+            >
+                historique  <i 
+                style="color: rgb(21, 23, 24);"
+                class="bi bi-clock-history"></i>
+                </div>
+           
+            <div class="rounded menuIcon">
+               <a 
+               style="text-decoration: none; color: #ffffff;"
+               href={{Contribuer}}>contribuer <i
+               style="color: rgb(21, 23, 24);"
+                class="bi bi-github"></i></a>
+                </div>
+            
+            <div class="rounded menuIcon">
+               <a
+               style="text-decoration: none; color:  #ffffff;"
+                href=`${{urlContact}}`> contactez nous <i
+                style="color: rgb(23, 248, 23);"
+                 class=" bi bi-whatsapp"></i></a>
+                </div>
+                {{!--  --}}
+                <div id="NewConversation" class="rounded menuIcon"
+            style="cursor: pointer;"
+            >
+                Nouvelle conversation <i 
+                style="color: rgb(21, 23, 24);"
+                class="bi bi-plus"></i>
+                </div>
+           
+            <div class="rounded menuIcon">
+               <a 
+               style="text-decoration: none; color: #ffffff;"
+               href={{urlSite}}>Notre site web <i
+               style="color: rgb(21, 23, 24);"
+                class="bi bi-chat"></i></a>
+                {{!-- icone a remplacer par celui de la plateforme --}}
+                </div>
+            </div>
+             
+            {{!--  Menu content barre end  --}}
+        <div class="message-box">
+            <div class="chat response">
+                <img class="rounded-circle" src="/img/robo.png" alt="user">
+                <span> {{BotDefaultMsg}} </span>
+            </div>
+        </div>
+        <div class="messagebar">
+            <div class="bar-wrapper">
+                <input type="text" placeholder="Posez-moi une question...">
+                <button
+                class="btn btn-success"
+                >
+                    <span class="material-symbols-outlined">
+                        send
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>

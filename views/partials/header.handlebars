@@ -1,0 +1,34 @@
+<header>
+            <nav>
+            <ul>
+                <div class="entete">
+                    <li class="logo">
+                        <img src="" alt=" image du Logo">
+                    </li>
+                    {{#if isLoggedIn}}
+                    {{else}}
+                    <li class="inscription">                   
+                         <a href="inscription" class="inscriptions"><strong>Inscription</strong></a>
+                    </li>
+                    {{/if}}
+                    <Li class="imgMark">
+                        <img src="1711192269852~2.jpg"  alt="IMAGE DE COUVERTURE " class="mkt">
+                    </Li>
+                    {{!-- src="/public/Img/1711192269852~2.jpg" 
+                          src="{{pathPrefix}}/1711192269852~2.jpg"
+                    --}}
+             </div>
+             <div class="b-sections">
+                <li class="sections">
+                    <a href="fil" class="fil-l"> <img src="fi-rr-home-heart.svg" alt="home" class="fil"></a>
+                    <a href="profil" class="stats-l"> <img src="fi-rr-user.svg" alt="fil" class="stats"></a>
+                    <a href="post" class="post-l"> <img src="fi-rr-add.svg" alt="fil" class="post"></a>
+                    <a href="notif" class="notif-l"> <img src="4781824_alarm_alert_attention_bell_clock_icon.png" alt="fil" class="notif"></a>
+                    <a href="plus" class="plus-l"> <img src="fi-rr-menu-burger.svg" alt="fil" class="plus"></a>
+
+                </li>
+             </div>
+    
+            </ul>
+            </nav>
+</header>
